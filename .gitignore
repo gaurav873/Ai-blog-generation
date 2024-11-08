@@ -1,2 +1,8 @@
 .venv
+# Ignore SQLite database
 db.sqlite3
+
+# Ignore compiled Python files and cache folders
+*.pyc
+__pycache__/
+
