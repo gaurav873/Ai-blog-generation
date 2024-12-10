@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import dj_database_url
 from pathlib import Path
 import os
 
@@ -93,6 +93,7 @@ DATABASES = {
         'PORT':'5432'
     }
 }
+DATABASES["default"]=dj_database_url.parse("postgresql://ai_blog_database_gs8v_user:SjzsjlJaIVRzqGc6YP3bEnTLdmWpSRFS@dpg-ctc40r52ng1s73bttr80-a.oregon-postgres.render.com/ai_blog_database_gs8v")
 
 
 
