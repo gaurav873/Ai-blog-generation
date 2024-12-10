@@ -107,7 +107,7 @@ def download_audio(link):
             }],
             'outtmpl': f'{settings.MEDIA_ROOT}/%(title)s.%(ext)s',
             'quiet': True,
-            'ffmpeg_location': 'C:\\ffmpeg-master-latest-win64-gpl-shared\\bin',  # Update this path
+            'ffmpeg_location': '/usr/bin/ffmpeg',  # Update this path
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
